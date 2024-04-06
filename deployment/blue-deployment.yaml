@@ -8,6 +8,7 @@ spec:
   containers:
     - name: blueweb
       image: localhost:5000/blue:1.1
+      imagePullPolicy: IfNotPresent
 ---
 kind: Service
 apiVersion: v1
