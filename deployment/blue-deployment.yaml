@@ -7,8 +7,8 @@ metadata:
 spec:
   containers:
     - name: blueweb
-      image: localhost:5000/blue:1.1
-      imagePullPolicy: IfNotPresent
+      image: blue:1.1
+      imagePullPolicy: Never
 ---
 kind: Service
 apiVersion: v1
