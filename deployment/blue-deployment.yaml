@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: blueweb
-      image: blue:1.1
+      image: timpaniman/blue:1.1
       imagePullPolicy: Never
 ---
 kind: Service
