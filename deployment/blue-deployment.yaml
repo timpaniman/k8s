@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: blueweb
-      image: timpaniman/blue:1.1
+      image: varunmanik/httpd:v1-blue
 ---
 kind: Service
 apiVersion: v1
