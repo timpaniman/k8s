@@ -8,7 +8,6 @@ spec:
   containers:
     - name: blueweb
       image: timpaniman/blue:1.1
-      imagePullPolicy: Never
 ---
 kind: Service
 apiVersion: v1
