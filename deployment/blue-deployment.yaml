@@ -1,0 +1,20 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: bluewebdeploy
+  labels:
+    app: blueweb
+spec:
+  containers:
+    - name: blueweb
+      image: 'varunmanik/httpd:v1-blue'
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: bluewebservice
+spec:
+  selector:
+    app: blueweb
+  ports:
+    - port: 8090
